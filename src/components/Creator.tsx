@@ -84,9 +84,9 @@ const Creator = ({ name, category, portrait, popCard }) => {
   let closeId, openId;
 
   const eyeBlink = () => {
-    const target = document.getElementById(name);
-    const svgDoc = target.contentDocument;
-    const eyePath = svgDoc.querySelectorAll('.st5');
+    const target: any = document.getElementById(name);
+    const svgDoc: any = target.contentDocument;
+    const eyePath: any = svgDoc.querySelectorAll('.st5');
 
     closeId = setInterval(() => {
       eyePath[0].setAttribute('visibility', 'hidden');

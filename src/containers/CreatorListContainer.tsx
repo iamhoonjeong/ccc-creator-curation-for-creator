@@ -8,10 +8,9 @@ import {
   selectPainter,
   selectDesigner,
 } from '../modules/creator';
-import 
 
 const CreatorListContainer = () => {
-  const creators = useSelector((state) => state.creator);
+  const creators = useSelector((state: any) => state.creator);
 
   // dispatch
   const dispatch = useDispatch();
