@@ -23,7 +23,7 @@ const Need1200 = styled.div`
   font-size: 1.4rem;
 `;
 
-const Header = styled.header`
+const Header = styled.header<any>`
   font-size: 1.4rem;
   font-weight: 400;
   width: 120px;
