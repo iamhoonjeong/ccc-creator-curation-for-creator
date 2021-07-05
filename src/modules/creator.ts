@@ -20,6 +20,13 @@ export const selectDeveloper = createAction(SELECT_DEVELOPER);
 export const selectPainter = createAction(SELECT_PAINTER);
 export const selectDesigner = createAction(SELECT_DESIGNER);
 
+type CreatorAction =
+  | ReturnType<typeof selectAll>
+  | ReturnType<typeof selectMusician>
+  | ReturnType<typeof selectDeveloper>
+  | ReturnType<typeof selectPainter>
+  | ReturnType<typeof selectDesigner>;
+
 const states = [
   { id: 1, name: 'Hoon Jeong', category: 'Developer', portrait: hoon },
   { id: 2, name: 'Chopin', category: 'Musician', portrait: chopin },
@@ -41,6 +48,13 @@ const initialState = [
   { id: 7, name: 'Chaka Khan', category: 'Musician', portrait: chakaKhan },
   { id: 8, name: 'Paula Scher', category: 'Designer', portrait: paulaScher },
 ];
+
+export type CreatorType = {
+  id: number;
+  name: string;
+  category: string;
+  portrait: string;
+};
 
 const creator = handleActions(
   {

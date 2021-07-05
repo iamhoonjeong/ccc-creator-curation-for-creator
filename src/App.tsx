@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
+import styled, { css } from 'styled-components';
+
 import CreatorListContainer from './containers/CreatorListContainer';
 
 const Wrapper = styled.div`
