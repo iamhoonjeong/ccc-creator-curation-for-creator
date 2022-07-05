@@ -22,11 +22,11 @@ const CreatorWrap = styled.div`
   @media screen and (max-width: 1320px) {
     height: 320px;
   }
-  width: 100%;
+  /* width: 100%;
   background: #a4193d;
   min-width: calc(25% - 1rem);
   max-width: calc(20% - 1rem);
-  margin: 0.5rem;
+  margin: 0.5rem; */
 
   display: flex;
   flex-direction: column;

@@ -16,18 +16,22 @@ const CreatorListContainer = () => {
   const dispatch = useDispatch();
 
   const onSelectAll = useCallback(() => dispatch(selectAll()), [dispatch]);
-  const onSelectMusician = useCallback(() => dispatch(selectMusician()), [
-    dispatch,
-  ]);
-  const onSelectDeveloper = useCallback(() => dispatch(selectDeveloper()), [
-    dispatch,
-  ]);
-  const onSelectPainter = useCallback(() => dispatch(selectPainter()), [
-    dispatch,
-  ]);
-  const onSelectDesigner = useCallback(() => dispatch(selectDesigner()), [
-    dispatch,
-  ]);
+  const onSelectMusician = useCallback(
+    () => dispatch(selectMusician()),
+    [dispatch],
+  );
+  const onSelectDeveloper = useCallback(
+    () => dispatch(selectDeveloper()),
+    [dispatch],
+  );
+  const onSelectPainter = useCallback(
+    () => dispatch(selectPainter()),
+    [dispatch],
+  );
+  const onSelectDesigner = useCallback(
+    () => dispatch(selectDesigner()),
+    [dispatch],
+  );
 
   return (
     <>

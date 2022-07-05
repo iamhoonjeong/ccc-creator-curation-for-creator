@@ -16,6 +16,22 @@ const BodyTitle = styled.h1`
 `;
 
 const CreatorWrap = styled.div`
+  a {
+    background: #a4193d;
+    min-width: calc(25% - 1rem);
+    max-width: calc(20% - 1rem);
+    margin: 0.5rem;
+    @media screen and (min-width: 1600px) {
+      height: 520px;
+    }
+    @media screen and (max-width: 1600px) {
+      height: 400px;
+    }
+    @media screen and (max-width: 1320px) {
+      height: 320px;
+    }
+    width: 100%;
+  }
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -67,13 +83,25 @@ const CreatorList = ({
       </SelectorWrap>
       <CreatorWrap>
         {creators.map((creator) => (
-          <Creator
-            popCard={popCard}
+          <div
             key={creator.id}
-            name={creator.name}
-            category={creator.category}
-            portrait={creator.portrait}
-          />
+            className="asdfasdfa"
+            style={{
+              width: '100%',
+              minWidth: 'calc(25% - 1rem)',
+              maxWidth: 'calc(20% - 1rem)',
+              background: '#a4193d',
+              margin: '0.5rem',
+            }}
+            onClick={() => console.log('a')}
+          >
+            <Creator
+              popCard={popCard}
+              name={creator.name}
+              category={creator.category}
+              portrait={creator.portrait}
+            />
+          </div>
         ))}
       </CreatorWrap>
     </Wrapper>
